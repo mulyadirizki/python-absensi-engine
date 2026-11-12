@@ -1,0 +1,11 @@
+[
+  {
+    "nama": "Kantor Pusat",
+    "host": "192.168.1.64",
+    "username": "admin",
+    "password": "ISI_PASSWORD_ADMIN_MESIN",
+    "https": false,
+    "timeout": 15,
+    "aktif": true
+  }
+]

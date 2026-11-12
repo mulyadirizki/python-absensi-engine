@@ -1,5 +1,6 @@
 # berisi IP & comm key mesin, jangan di-commit
 machines.json
+mesin_hik.json
 
 # hasil tarikan log (data pegawai)
 output/
