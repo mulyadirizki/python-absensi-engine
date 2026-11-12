@@ -22,7 +22,7 @@ from hik_isapi import NAMA_MINOR, buat_klien, format_waktu, muat_mesin
 
 BASE_DIR = Path(__file__).resolve().parent
 KOLOM = ["mesin", "host", "serial_number", "employee_no", "nama", "timestamp",
-         "attendance_status", "verifikasi", "minor", "serial_no"]
+         "attendance_status", "label", "verifikasi", "minor", "serial_no"]
 
 
 def tanggal(teks):
@@ -53,7 +53,9 @@ def tarik(m, mulai, akhir, tz, semua_event):
                 "nama": e.get("name", ""),
                 "timestamp": format_waktu(e.get("time")),
                 "attendance_status": e.get("attendanceStatus", ""),
-                "verifikasi": e.get("currentVerifyMode") or NAMA_MINOR.get(minor, ""),
+                "label": e.get("label", ""),
+                # cara scan dibaca dari kode minor; currentVerifyMode hanya mode yang disetel di mesin
+                "verifikasi": NAMA_MINOR.get(minor) or f"kode {minor}",
                 "minor": minor,
                 "serial_no": e.get("serialNo", ""),
             })

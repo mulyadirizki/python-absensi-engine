@@ -131,8 +131,8 @@ Kolom hasil:
 | `employee_no` | ID pegawai di mesin |
 | `nama` | Nama pegawai di mesin |
 | `timestamp` | Waktu scan (jam mesin), `YYYY-MM-DD HH:MM:SS` |
-| `attendance_status` | `checkIn` / `checkOut` / `breakOut` / ... jika mode absensi di mesin diaktifkan |
-| `verifikasi` | Cara verifikasi: wajah, kartu, sidik jari, dll. |
+| `attendance_status`, `label` | `checkIn` / `checkOut` / ... dan labelnya di mesin (mis. "Check In"), jika mode absensi diaktifkan |
+| `verifikasi` | Cara scan saat itu (dari kode `minor`): wajah, kartu, sidik jari, dll. |
 | `minor`, `serial_no` | Kode event dan nomor urut event di mesin |
 
 Zona waktu default `+07:00` (WIB). Untuk WITA/WIT pakai `--tz +08:00` / `--tz +09:00`.
