@@ -1,0 +1,18 @@
+[
+  {
+    "nama": "Kantor Pusat",
+    "ip": "192.168.1.201",
+    "port": 4370,
+    "password": 0,
+    "timeout": 15,
+    "force_udp": false,
+    "aktif": true
+  },
+  {
+    "nama": "Site",
+    "ip": "192.168.1.202",
+    "port": 4370,
+    "password": 0,
+    "aktif": false
+  }
+]

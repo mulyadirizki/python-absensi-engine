@@ -1,0 +1,11 @@
+# berisi IP & comm key mesin, jangan di-commit
+machines.json
+
+# hasil tarikan log (data pegawai)
+output/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
